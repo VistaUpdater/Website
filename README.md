@@ -3,4 +3,4 @@ VistaUpdaterのウェブサイトのソースコード
 
 ----
 
-公式サイト: http://vistaupdater.net ([HTTPS](https://vistaupdater.net)
+公式サイト: http://vistaupdater.net ([HTTPS](https://vistaupdater.net))
