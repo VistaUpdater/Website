@@ -1,76 +1,190 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>VistaUpdater - Windows VistaのWindows Updateを復活。</title>
+    <link rel="icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/assets/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>VistaUpdater</title>
-  <link rel="stylesheet" type="text/css" href="assets/index.css">
-</head>
-
-<body>
-  <header>
-    <h1>VistaUpdater</h1>
-    <nav>
+  <body>
+    <div class="sidebar">
+      <h1 class="sidebar-section sidebar-section-title">VistaUpdater</h1>
+      <h3 class="sidebar-section sidebar-section-title">VistaUpdaterを開始</h3>
       <ul>
-        <li><a href="/index.html">ホーム</a></li>
-        <li><a href="/tools.html">ツール</a></li>
-        <li><a href="/win7/index.html">Windows 7</a></li>
-        <li><a href="https://rai.uplauncher.xyz">雷さんのサイトへ</a></li>
+        <li class="sidebar-section">
+          <img
+            class="sidebar-section sidebar-img"
+            src="/assets/vistaupdater.png"
+          /><a href="/">ホーム</a>
+        </li>
+        <li class="sidebar-section">
+          <img class="sidebar-section sidebar-img" src="/assets/book.png" /><a
+            class="sidebar-section"
+            href="/guide.html"
+            >セットアップ ガイド</a
+          >
+        </li>
+        <li class="sidebar-section">
+          <img class="sidebar-section sidebar-img" src="/assets/tool.png" /><a
+            class="sidebar-section"
+            href="/tools.html"
+            >追加アプリケーション</a
+          >
+        </li>
+        <li class="sidebar-section">
+          <img class="sidebar-section sidebar-img" src="/assets/error.png" /><a
+            class="sidebar-section"
+            href="/errors.html"
+            >トラブルシューティング</a
+          >
+        </li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>VistaUpdater へようこそ。</h1>
-    <section>
-      <h2>このソフトウェアについて</h2>
-      <p class="left">Windows Vista の自動更新 (Windows Update) を利用できるようにします。<br>
-        このソフトウェアは、Vista_SHA2_WUCを自動化したものです。<br><br>
+      <h3 class="sidebar-section sidebar-section-title">その他</h3>
+      <ul>
+        <li class="sidebar-section">
+          <img
+            class="sidebar-section sidebar-img"
+            src="/assets/vistaupdater.png"
+          /><a href="/win7/">Win7Updaterを試す</a>
+        </li>
+        <li class="sidebar-section">
+          <img
+            class="sidebar-section sidebar-img"
+            src="/assets/source_code.png"
+          /><a href="/opensource.html">オープンソース</a>
+        </li>
+        <li class="sidebar-section">
+          <img
+            class="sidebar-section sidebar-img"
+            src="/assets/messenger.png"
+          /><a href="https://twitter.com/vistaupdater">Twitter (X)</a>
+        </li>
+        <li class="sidebar-section">
+          <img
+            class="sidebar-section sidebar-img"
+            src="/assets/source_code.png"
+          /><a href="https://github.com/vistaupdater">GitHub</a>
+        </li>
+        <li class="sidebar-section">
+          <img
+            class="sidebar-section sidebar-img"
+            src="/assets/messenger.png"
+          /><a href="https://discord.gg/tJTTM56Wg2">Discord</a>
+        </li>
+      </ul>
+    </div>
+    <main>
+      <section>
+        <h1>VistaUpdaterへようこそ。</h1>
+        <h2>このソフトウェアについて</h2>
+        <p class="left">
+          Windows Vista の自動更新 (Windows Update)
+          を利用できるようにします。<br />
+          このソフトウェアは、Vista_SHA2_WUCを自動化したものです。<br /><br />
 
-        Microsoft は、2020年の8月頃にSHA-1ベースのエンドポイントを廃止しました。<br>
-        そのことにより、Windows Vista のアップデートサーバーには接続できなくなりました。<br><br>
+          Microsoft
+          は、2020年の8月頃にSHA-1ベースのエンドポイントを廃止しました。<br />
+          そのことにより、Windows Vista
+          のアップデートサーバーには接続できなくなりました。<br /><br />
 
-        Windows Update では、ドライバーや更新プログラムを受け取ることができますが、その方法が利用できなくなってしまったのです。<br>
-        そこでリリースされたのが、VistaUpdaterです。このツールは、自動でWindows Updateと自動更新を復活させます。<br><br>
+          Windows Update
+          では、ドライバーや更新プログラムを受け取ることができますが、その方法が利用できなくなってしまったのです。<br />
+          そこでリリースされたのが、VistaUpdaterです。このツールは、自動でWindows
+          Updateと自動更新を復活させます。<br /><br />
 
-        近いうちには、Windows Server 2008 の更新(ESU含む)も、Windows Updateから取得できるようにします。<br>
-      
-        <strong>2023/10/19: VistaUpdater v1.1がリリースされました。このバージョンにはバグ修正が含まれています。</strong><br>
-        <strong>2023/10/22: VistaUpdater v1.2がリリースされました。このバージョンには機能強化が含まれています。</strong><br>
-        <strong>2023/10/22: VistaUpdater v1.2にパッチを当てました。Service Pack Installerを実行したあとにエラーが発生する問題を修正しました。</strong><br>
-        <strong>2023/10/22: VistaUpdater v1.2にパッチを当てました。アップデートが無限ループする問題を修正しました。</strong><br>
-        <strong>2023/10/23: VistaUpdater v1.2.1がリリースされました。このバージョンには機能強化が含まれています。</strong>
-    </p>
-    </section>
-    <section>
-      <h2>注意</h2>
-      <p class="left">このプログラムは、古いOSを使い続けることを推奨してるわけではなく、エンターテイメントや古いソフトウェアを実行する方向けに作られました。<br>
-        Linux、Windows 10、11などの正式にサポートされているOSを使用してください。それでも使用する場合は、以下からダウンロードすることができます。</p>
-    </section>
+          近いうちには、Windows Server 2008 の更新(ESU含む)も、Windows
+          Updateから取得できるようにします。<br />
 
-    <div class="left" style="background-color: rgb(201, 242, 255); width: 50%;">
-      <h1>&emsp;VistaUpdater</h1>
-      <p>&emsp;&emsp;互換性がある製品: Windows Vista<br>
-        &emsp;&emsp;すべてのエディション (Starter, Home, Business 等)<br>
-        &emsp;&emsp;64bit プロセッサー、Service Pack 2</p>
-        &emsp;&emsp;現在のバージョン: 1.2.1
-        &emsp;&emsp;<a class="button" href="/tools/latest.zip">ダウンロード</a><br><br>
-    </div><br>
+          <strong
+            >2023/10/19: VistaUpdater
+            v1.1がリリースされました。このバージョンにはバグ修正が含まれています。</strong
+          ><br />
+          <strong
+            >2023/10/22: VistaUpdater
+            v1.2がリリースされました。このバージョンには機能強化が含まれています。</strong
+          ><br />
+          <strong
+            >2023/10/22: VistaUpdater v1.2にパッチを当てました。Service Pack
+            Installerを実行したあとにエラーが発生する問題を修正しました。</strong
+          ><br />
+          <strong
+            >2023/10/22: VistaUpdater
+            v1.2にパッチを当てました。アップデートが無限ループする問題を修正しました。</strong
+          ><br />
+          <strong
+            >2023/10/23: VistaUpdater
+            v1.2.1がリリースされました。このバージョンには機能強化が含まれています。</strong
+          ><br />
+          <strong
+            >2023/10/25:
+            新しいウェブサイトのUIをテスト中です。バグを発見した場合は、下記の手順で報告してください。<br />
+            <li>
+              Discordで報告する(推奨) -
+              Discordサーバーに入ってサポートチャンネルから報告します。
+            </li>
+            <li>
+              GitHub Issuesで報告する -
+              GitHubのレポジトリへ行って、Issuesから報告します。
+            </li>
+            <li>
+              Twitterで報告する -
+              Twitterで@VistaUpdaterとメンションしてバグ内容などをツイートします。
+            </li>
+          </strong>
+        </p>
+      </section>
 
-    <section>
-      <h2>クレジット</h2>
-      <p class="left">
-        <strong>VistaUpdater は、Vista_SHA2_WUC の製作者、応援してくれている皆さんに感謝します。</strong><br>
-        この場所に自分の名前を記載したい場合は、PatreonかTwitterサブスクリプションを利用してください。<br>
-        <strong>現在、この場所に自分の名前を記載することはできません。</strong></p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 雷さんによって作成されました。このサイトやプログラム等はMicrosoftと連携、承認されていません。<br>
-      このソフトウェアによってコンピューターに何らかの問題を起こした場合、雷さんや開発者は責任を取りません。<br>
-      実行する前に、必ずデータのバックアップを行うようにしてください。</p>
-  </footer>
-</body>
+      <section>
+        <h2>注意</h2>
+        <p class="left">
+          このプログラムは、古いOSを使い続けることを推奨してるわけではなく、エンターテイメントや古いソフトウェアを実行する方向けに作られました。<br />
+          Linux、Windows
+          10、11などの正式にサポートされているOSを使用してください。それでも使用する場合は、以下からダウンロードすることができます。
+        </p>
+      </section>
 
-<script src="assets/index.js"></script>
+      <div
+        class="left box"
+        style="background-color: rgb(201, 242, 255); width: 30%"
+      >
+        <h1>&emsp;VistaUpdater</h1>
+        <p>
+          &emsp;&emsp;互換性がある製品: Windows Vista<br />
+          &emsp;&emsp;すべてのエディション (Starter, Home, Business 等)<br />
+          &emsp;&emsp;64bit プロセッサー、Service Pack 2
+        </p>
+        &emsp;&emsp;現在のバージョン: 1.2.1<br /><br />&emsp;&emsp;<a
+          id="button"
+          href="/tools/latest.zip"
+          >ダウンロード</a
+        ><br /><br />
+      </div>
+      <br />
 
+      <section>
+        <h2>クレジット</h2>
+        <p class="left">
+          <strong
+            >VistaUpdater は、Vista_SHA2_WUC
+            の製作者、応援してくれている皆さんに感謝します。</strong
+          ><br />
+          この場所に自分の名前を記載したい場合は、PatreonかTwitterサブスクリプションを利用してください。<br />
+          <strong
+            >現在、この場所に自分の名前を記載することはできません。</strong
+          >
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy;
+        雷さんによって作成されました。このサイトやプログラム等はMicrosoftと連携、承認されていません。<br />
+        このソフトウェアによってコンピューターに何らかの問題を起こした場合、雷さんや開発者は責任を取りません。<br />
+        実行する前に、必ずデータのバックアップを行うようにしてください。
+      </p>
+    </footer>
+  </body>
+
+  <script src="assets/index.js"></script>
 </html>

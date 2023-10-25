@@ -1,3 +1,6 @@
+/* Import New Sidebar */
+@import url("/assets/sidebar.css");
+
 /* Reset styles */
 * {
   margin: 0;
@@ -7,17 +10,18 @@
 
 /* Global styles */
 body {
-  font-family: "Yu Gothic UI", "メイリオ";
+  font-family: "Segoe UI Variable Display", "Yu Gothic UI", "メイリオ";
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  text-align: center;
+  width: 100vw;
 }
 
-a {
-  text-decoration: none;
-  color: #007bff;
+h1 h2 h3 h4 h5 h6 strong {
+  font-family: "Segoe UI Variable Display", "Yu Gothic UI", "メイリオ";
+  font-weight: bold;
 }
+
 
 /* Header styles */
 header {
@@ -44,9 +48,21 @@ nav li {
 
 /* Main styles */
 main {
-  max-width: 960px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
+}
+
+@media not (max-width: 620px) {
+  main {
+    margin-left: 210px;
+  }
+}
+
+@media (max-width: 610px) {
+  main {
+    margin-left: 200px;
+  }
 }
 
 main h2 {
@@ -69,7 +85,7 @@ section p {
   margin-bottom: 20px;
 }
 
-section a {
+#button {
   display: inline-block;
   background-color: #007bff;
   color: #fff;
@@ -77,20 +93,17 @@ section a {
   border-radius: 4px;
 }
 
-.button {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-}
+/* Box */
+.box {
+  border-radius: 15px;
 
-section a:hover {
-  background-color: #0069d9;
+  background-image: linear-gradient(to right, #61aa98, #6bb86e);
 }
 
 .left {
   text-align: left;
+
+  margin-left: 20px;
 }
 
 /* Footer styles */
