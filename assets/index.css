@@ -1,3 +1,5 @@
+@import url("/assets/sidebar.css");
+
 /* Reset styles */
 * {
   margin: 0;
@@ -44,14 +46,28 @@ nav li {
 }
 
 
-/* Main styles */
-main {
+/* .content styles */
+.content {
   width: 100%;
   margin: 0 auto;
   padding: 20px;
+
+  margin-left: 220px;
 }
 
-main h2 {
+@media not (max-width: 620px) {
+  .content {
+    margin-left: 210px;
+  }
+}
+
+@media (max-width: 610px) {
+  .content {
+    margin-left: 200px;
+  }
+}
+
+.content h2 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
